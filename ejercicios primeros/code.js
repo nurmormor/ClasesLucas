@@ -32,5 +32,5 @@ repaso();
 
 
 divResultado = document.getElementById("divResultado");
-divResultado2= document.getElementById("divResultado1");
+divResultado2= document.getElementById("divResultado3");
 

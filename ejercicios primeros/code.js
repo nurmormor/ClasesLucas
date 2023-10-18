@@ -24,8 +24,6 @@ function repaso() {
         alert("vaya, " + edad + "muchos años");
         alert("y el año que viene " + (Number(edad) + Number(1)));
     }
-
-
 }
 
 volumenEsfera();

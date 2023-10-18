@@ -1,0 +1,31 @@
+#bola {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  
+  #gris {
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    margin: 25% auto;
+  }
+  
+  #ocho {
+    font-size: 5em;
+    margin: 20% auto;
+    color: white;
+    text-align: center;
+  }
+  
+  #respuesta {
+    padding: 25px;
+    color: lightblue;
+    letter-spacing: 2px;
+  }

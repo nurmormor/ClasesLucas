@@ -4,23 +4,24 @@
 //FUNCTIONS
 //////////////
 
-function btnCalcular(){
+function calcular(){
 
-let num8=document.getElementById("bola").style.display="none";
+document.getElementById("ocho").style.display="none";
+
+let respuesta = document.getElementById("respuesta");
+
 let numAleatorio = Math.floor(Math.random()*4) + 1;
 
-let respuesta;
 
 if (numAleatorio ===1) {
-    respuesta = "Lo que tú digas";
+    respuesta.innerHTML = "Lo que tú digas";
 } else if (numAleatorio===2) {
-    respuesta = "si ome";
+    respuesta.innerHTML = "si ome";
 } else if (numAleatorio===3) {
-    respuesta= "don't see";
+    respuesta.innerHTML= "don't see";
 } else {
-    respuesta="amore..........."
+    respuesta.innerHTML="hija..........."
 }
-
 
 
 }
@@ -29,6 +30,6 @@ if (numAleatorio ===1) {
 /////////////
 //MAIN
 /////////////
-let btnCalcular = document.getElementById("btnCalcular");
-btnCalcular.addEventListener("click", btnCalcular);
-btnCalcular();
+
+let boton = document.getElementById("btnCalcular");
+boton.addEventListener("click", calcular);

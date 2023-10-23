@@ -1,12 +1,23 @@
 
-"use strict"
+"use strict" //preguntar 
 
+////////
+//FUNCTIONS
+/////////
 
-document.getElementById("abrirVentana").addEventListener("click", function() {
-    window.open("https://example.com", "_blank");
-});
+function ventanaEmergente(){
 
-function abrirNuevaVentana() {
-    let newWin = window.open("about:blank", "hello", "width=200,height=200");
-    newWin.document.write("Hello, world!");
+    newWin.document.write(
+        "<script>window.opener.document.body.innerHTML = 'Test'<\/script>"
+      );
+
 }
+
+///////////
+//MAIN
+///////////
+
+let ventana = document.getElementById("abrirVentana");
+ventana.addEventListener("click", ventanaEmergente);
+
+

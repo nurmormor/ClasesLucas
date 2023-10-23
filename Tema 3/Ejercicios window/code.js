@@ -4,7 +4,11 @@ function crearFactura(){
 	producto = document.getElementById('txtProducto').value;
 	cantidad = document.getElementById('txtCantidad').value;
 
-	window.open("crearFactura.html");
+	const facturaWindow = window.open("abrirFactura.html");
+
+    facturaWindow.addEventListener('load', function() {
+        facturaWindow.postMessage({ producto, cantidad }, '*');
+    });
 }
 
 

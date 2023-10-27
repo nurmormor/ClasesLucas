@@ -28,5 +28,5 @@ division2.innerHTML = cuadrado2(num);
 let division3 = document.getElementById("resultado3");
 division3.innerHTML = cuadrado3(num);
 let division4 = document.getElementById("resultado4")
-division4.innerHTML = cuadrado3(num);
+division4.innerHTML = cuadrado4(num);
 

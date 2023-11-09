@@ -48,7 +48,7 @@ function añadirCrema() {
 function mostrarProducto() {
 
     for (let index = 0; index < cremas.length; index++) {
-        resultado.innerHTML += `<h3> Crema ${index+1}: ${cremas[index].nombre}</h3>`; //el +1 es pa que empiece en el 1 y no en el 0q ue queda feo
+        resultado.innerHTML += `<h3> Crema ${index+1}: ${cremas[index].nombre}</h3>`; //el +1 es pa que empiece en el 1 y no en el 0 que queda feo
         resultado.innerHTML += cremas[index].toHTMLTable();
 
     }
@@ -56,26 +56,27 @@ function mostrarProducto() {
 }
 
 
-function añadirIngrediente() {
+function añadirIngrediente(crema1) {
 
 
     let nombreIngrediente = document.getElementById("txtNombreIngrediente").value;
 
     let cantidad = document.getElementById("txtCantidad").value;
 
-    ingredientes.push(nombreIngrediente, cantidad);
+    crema1.addIngrediente(nombreIngrediente, cantidad);
 
     document.getElementById("txtNombreIngrediente").value = "";
 
     document.getElementById("txtCantidad").value = "";
 
-    mostrarProducto();
 
 }
 
-function eliminarIngrediente() {
+function eliminarIngrediente(crema1) {
 
 let indice = document.getElementById("txtIndice");
+
+
 
 ingredientes.splice(indice,1);
 

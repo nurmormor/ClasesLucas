@@ -6,16 +6,16 @@ class Crema {
         this.ingrediente = []; //un array de objetos de tipo ingrediente
     }
  
-    addIngrediente(nombre, cantidad) {
-        let ingrediente1 = new Ingrediente(nombre, cantidad);
+   // addIngrediente(nombreIngrediente, cantidad) {
+        //let ingrediente1 = new Ingrediente(nombreIngrediente, cantidad);
 
-        this.ingrediente.push(ingrediente1); //this porque es en la clase objetos.js
-    }
+        //this.ingrediente.push(ingrediente1); //this porque es en la clase objetos.js
+    //}
 
-    removeIngrediente(i) {
+   // removeIngrediente(i) {
 
-        this.ingrediente.splice(i, 0);
-    }
+      //  this.ingrediente.splice(i, 0);
+   // }
 
     toHTMLTable() {
 

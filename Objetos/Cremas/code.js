@@ -63,7 +63,7 @@ function añadirIngrediente() {
 
     let cantidad = document.getElementById("txtCantidad").value;
 
-    crema1.addIngrediente(nombreIngrediente, cantidad);
+    ingredientes.push(nombreIngrediente, cantidad);
 
     document.getElementById("txtNombreIngrediente").value = "";
 
@@ -77,6 +77,6 @@ function eliminarIngrediente() {
 
 let indice = document.getElementById("txtIndice");
 
-crema1.removeIngrediente[indice];
+ingredientes.splice(indice,1);
 
 }

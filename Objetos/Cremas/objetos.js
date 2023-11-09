@@ -6,15 +6,15 @@ class Crema {
         this.ingrediente = []; //un array de objetos de tipo ingrediente
     }
  
-    addIngrediente(nombre, cantidad) {
-        let ingrediente1 = new Ingrediente(nombre, cantidad);
+    /*addIngrediente(nombreIngrediente, cantidad) {
+        let ingrediente1 = new Ingrediente(nombreIngrediente, cantidad);
 
         this.ingrediente.push(ingrediente1); //this porque es en la clase objetos.js
     }
-
+*/
     removeIngrediente(i) {
 
-        this.ingrediente.splice(i, 0);
+        this.ingrediente.splice(i, 1);
     }
 
     toHTMLTable() {
@@ -32,6 +32,7 @@ class Crema {
 
 
         sol += `</table>`;
+        return sol; // ¡Agrega esta línea para devolver el valor calculado!
     }
 
 }
@@ -46,6 +47,6 @@ class Ingrediente {
 
         let sol;
         sol += `<td>${this.nombreIngrediente}</td><td>${this.cantidad}</td>`;
-
+        return sol; 
     }
 }

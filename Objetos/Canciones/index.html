@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canciones</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <script defer src="objects.js"></script>
+    <script defer src="code.js"></script>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Gestionar canciones y ficheros</legend>
+            <label for="txtNombreCancion">Nombre cancion</label><br>
+            <input type="text" name="txtNombreCancion" id="txtNombreCancion"><br>
+
+            <label for="txtDuracionCancion">Duracion cancion</label><br>
+            <input type="number" name="txtDuracionCancion" id="txtDuracionCancion"><br>
+
+            <label for="txtNombreFichero">Nombre fichero</label><br>
+            <input type="text" name="txtNombreFichero" id="txtNombreFichero"><br>
+
+            <label for="txtTamañoFichero">Tamaño fichero</label><br>
+            <input type="number" name="txtTamañoFichero" id="txtTamañoFichero"><br>
+
+            <div class="botonera">
+                <fieldset>
+                    
+                    <legend> Elige uno: </legend>
+                    <label for="txtRadioCanción">Canción</label>
+                    <input type="radio" name="ficheroCancion" id="txtRadioCancion" value="cancion" checked><br>
+                    
+                    <label for="txtRadioFichero">Fichero</label>
+                    <input type="radio" name="ficheroCancion" id="txtRadioFichero" value="fichero">
+                    <br><br>
+
+
+                    <button type="button" id="btnAgregar">Agregar</button><br>
+                    <button type="button" id="btnMostrar">Mostrar</button><br>
+                </fieldset>
+            </div>
+            
+        </fieldset>
+
+    </form>
+
+    <div id="resultado"></div>
+</body>
+</html>

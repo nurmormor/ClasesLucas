@@ -78,8 +78,9 @@ class Producto{
 
 }
 
-class Movil {
-    constructor(modelo,android){
+class Movil extends Producto{
+    constructor(id, nombre, precio, modelo,android){
+        super (id, nombre, precio);
         this.modelo=modelo;
         this.android=android;
     }
@@ -90,7 +91,8 @@ class Movil {
 }
 
 class Carcasa{
-    constructor(material){
+    constructor(id, nombre, precio, material){
+        super (id, nombre, precio);
         this.material=material;
     }
 

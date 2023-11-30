@@ -30,8 +30,7 @@ class Tienda{
     if(bici){
       if(bici.vendida){
         return "Bicicleta ya vendida";
-      }
-      else{
+      }else{
         bici.vendida = true;
         return "Bicicleta vendida";
       } 

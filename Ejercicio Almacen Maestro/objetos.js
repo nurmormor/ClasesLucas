@@ -28,7 +28,7 @@ class Almacen {
       almacen.stock.push(oStock);
 
       // Calculamos el total de Stock de ese producto
-      const totalStock = this.stock.filter( p=>p.idProducto === idProducto ).reduce( (acc,p)=>acc+p.unidades , 0);
+      const totalStock = this.stock.filter( p=>p.idProducto === idProducto ).reduce( (acc,p)=>acc+p.unidades , 0); //que alguien me explique esto
 
 
       // let total=0;
@@ -136,7 +136,7 @@ class Almacen {
 
     for(let prodStock of this.stock){
 
-      const producto = this.catalogo.find( pCatalogo=> pCatalogo.id == prodStock.idProducto );
+      const producto = this.catalogo.find( pCatalogo=> pCatalogo.id == prodStock.idProducto ); //esto sirve para encontrar en el stock el mismo producto del almacen, es decir si coinciden los id
 
       const precio = producto.precio;
       resultado += prodStock.unidades*precio;
